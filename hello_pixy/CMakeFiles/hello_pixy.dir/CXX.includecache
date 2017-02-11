@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pi/hello_pixy/hello_pixy.cpp
+iostream
+-
+stdio.h
+-
+stdlib.h
+-
+unistd.h
+-
+signal.h
+-
+string.h
+-
+pixy.h
+/home/pi/hello_pixy/pixy.h
+
