@@ -35,6 +35,7 @@ frame = 0
 HOST = ''
 PORT = 5800
 soc = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+# soc = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 soc.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 soc.bind((HOST, PORT))
 soc.listen(5)
@@ -48,17 +49,19 @@ log("received data")
 while 1:
 
     count = pixy_get_blocks(100, blocks)
+
     if count > 0:
         # Blocks found #
-        print 'frame %3d:' % (frame)
+        # rint 'frame %3d:' % (frame)
         frame = frame + 1
         output = []
         for index in range(0, count):
             detected = []
-            print '[FRAME=%3d BLOCK_TYPE=%d SIG=%d X=%3d Y=%3d WIDTH=%3d HEIGHT=%3d]' % (
-                frame, blocks[index].type, blocks[index].signature,
-                blocks[index].x, blocks[index].y, blocks[index].width,
-                blocks[index].height)
+            if (frame%500) == 0:
+                print '[FRAME=%3d BLOCK_TYPE=%d SIG=%d X=%3d Y=%3d WIDTH=%3d HEIGHT=%3d]' % (
+                    frame, blocks[index].type, blocks[index].signature,
+                    blocks[index].x, blocks[index].y, blocks[index].width,
+                    blocks[index].height)
             detected.append(str(frame))
             detected.append(str(blocks[index].type))
             detected.append(str(blocks[index].signature))
@@ -68,11 +71,14 @@ while 1:
             detected.append(str(blocks[index].height))
             output.append(detected)
         toSend = ""
-        for index in output:
-            toSend += " ".join(index) + ","
-        try:
-            conn.send(toSend + "\n")
-        except socket.error:
-            conn.close()
-            soc.listen(5)
-            conn, addr = soc.accept()
+        for i in range(0, len(output)):
+            toSend += " ".join(output[i])
+            if i < len(output) - 1:
+                toSend += ","
+        if (frame%500) == 0:
+            try:
+                conn.send(toSend + "\n")
+            except socket.error:
+                conn.close()
+                soc.listen(5)
+                conn, addr = soc.accept()
