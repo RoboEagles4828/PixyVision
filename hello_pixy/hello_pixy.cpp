@@ -82,9 +82,9 @@ int main(int argc, char * argv[])
       // Success //
       //printf(" Pixy Firmware Version: %d.%d.%d\n", major, minor, build);
     }
-    return_value=pixy_command("cam_setWBV", UINT32(8017984),END_OUT_ARGS,  &response, END_IN_ARGS);
+    return_value=pixy_command("cam_setWBV", UINT32(8013888),END_OUT_ARGS,  &response, END_IN_ARGS);
     //cout<<return_value<<endl;
-    return_value=pixy_command("cam_setECV", UINT32(52738), END_OUT_ARGS,  &response, END_IN_ARGS);
+    return_value=pixy_command("cam_setECV", UINT32(24832), END_OUT_ARGS,  &response, END_IN_ARGS);
     //cout<<return_value<<endl;
 	return_value=pixy_command("cam_setBrightness", UINT8(26), END_OUT_ARGS,  &response, END_IN_ARGS);
 	//cout<<return_value<<endl;

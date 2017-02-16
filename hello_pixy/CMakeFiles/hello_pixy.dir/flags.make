@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = -D__LIBPIXY_VERSION__=\"0.4\"
 
-CXX_INCLUDES = -I/home/pi/hello_pixy/src -I/home/pi/hello_pixy/include -I/home/pi/hello_pixy/../../common -I/usr/include/libusb-1.0 
+CXX_INCLUDES = -I/home/pi/PixyVision/hello_pixy/src -I/home/pi/PixyVision/hello_pixy/include -I/home/pi/PixyVision/hello_pixy/../../common -I/usr/include/libusb-1.0 
 

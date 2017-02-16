@@ -375,3 +375,31 @@ Linking CXX executable cmTC_49d9e
 make[1]: Leaving directory '/home/pi/hello_pixy/CMakeFiles/CMakeTmp'
 
 
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/pi/PixyVision/hello_pixy/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f57aa/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f57aa.dir/build.make CMakeFiles/cmTC_f57aa.dir/build
+make[1]: Entering directory '/home/pi/PixyVision/hello_pixy/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f57aa.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++      -o CMakeFiles/cmTC_f57aa.dir/CheckIncludeFile.cxx.o -c /home/pi/PixyVision/hello_pixy/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_f57aa
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f57aa.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_f57aa.dir/CheckIncludeFile.cxx.o  -o cmTC_f57aa -rdynamic 
+make[1]: Leaving directory '/home/pi/PixyVision/hello_pixy/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/pi/PixyVision/hello_pixy/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0a35f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0a35f.dir/build.make CMakeFiles/cmTC_0a35f.dir/build
+make[1]: Entering directory '/home/pi/PixyVision/hello_pixy/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_0a35f.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++     -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_0a35f.dir/CheckFunctionExists.cxx.o -c /home/pi/PixyVision/hello_pixy/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_0a35f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0a35f.dir/link.txt --verbose=1
+/usr/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_0a35f.dir/CheckFunctionExists.cxx.o  -o cmTC_0a35f -rdynamic -lpthread 
+make[1]: Leaving directory '/home/pi/PixyVision/hello_pixy/CMakeFiles/CMakeTmp'
+
+

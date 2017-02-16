@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/pi/hello_pixy/hello_pixy.cpp" "/home/pi/hello_pixy/CMakeFiles/hello_pixy.dir/hello_pixy.cpp.o"
+  "/home/pi/PixyVision/hello_pixy/hello_pixy.cpp" "/home/pi/PixyVision/hello_pixy/CMakeFiles/hello_pixy.dir/hello_pixy.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

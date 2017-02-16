@@ -53,3 +53,58 @@ Makefile:126: recipe for target 'cmTC_c3766/fast' failed
 make: *** [cmTC_c3766/fast] Error 2
 
 
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/pi/PixyVision/hello_pixy/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_94cf6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_94cf6.dir/build.make CMakeFiles/cmTC_94cf6.dir/build
+make[1]: Entering directory '/home/pi/PixyVision/hello_pixy/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_94cf6.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++      -o CMakeFiles/cmTC_94cf6.dir/CheckSymbolExists.cxx.o -c /home/pi/PixyVision/hello_pixy/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_94cf6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_94cf6.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_94cf6.dir/CheckSymbolExists.cxx.o  -o cmTC_94cf6 -rdynamic 
+CMakeFiles/cmTC_94cf6.dir/CheckSymbolExists.cxx.o: In function `main':
+CheckSymbolExists.cxx:(.text+0x38): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_94cf6.dir/build.make:97: recipe for target 'cmTC_94cf6' failed
+make[1]: *** [cmTC_94cf6] Error 1
+make[1]: Leaving directory '/home/pi/PixyVision/hello_pixy/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_94cf6/fast' failed
+make: *** [cmTC_94cf6/fast] Error 2
+
+File /home/pi/PixyVision/hello_pixy/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/pi/PixyVision/hello_pixy/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_55e10/fast"
+/usr/bin/make -f CMakeFiles/cmTC_55e10.dir/build.make CMakeFiles/cmTC_55e10.dir/build
+make[1]: Entering directory '/home/pi/PixyVision/hello_pixy/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_55e10.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++     -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_55e10.dir/CheckFunctionExists.cxx.o -c /home/pi/PixyVision/hello_pixy/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_55e10
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_55e10.dir/link.txt --verbose=1
+/usr/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_55e10.dir/CheckFunctionExists.cxx.o  -o cmTC_55e10 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_55e10.dir/build.make:97: recipe for target 'cmTC_55e10' failed
+make[1]: *** [cmTC_55e10] Error 1
+make[1]: Leaving directory '/home/pi/PixyVision/hello_pixy/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_55e10/fast' failed
+make: *** [cmTC_55e10/fast] Error 2
+
+

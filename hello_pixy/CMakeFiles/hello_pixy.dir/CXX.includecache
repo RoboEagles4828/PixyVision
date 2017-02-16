@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/pi/hello_pixy/hello_pixy.cpp
+/home/pi/PixyVision/hello_pixy/hello_pixy.cpp
 iostream
 -
 stdio.h
@@ -20,5 +20,5 @@ signal.h
 string.h
 -
 pixy.h
-/home/pi/hello_pixy/pixy.h
+/home/pi/PixyVision/hello_pixy/pixy.h
 

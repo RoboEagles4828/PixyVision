@@ -9,17 +9,22 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "CMakeFiles/3.6.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.6.2/CMakeSystem.cmake"
+  "CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx"
   "CMakeLists.txt"
   "cmake/Findlibpixyusb.cmake"
   "cmake/Findlibusb-1.0.cmake"
   "/usr/share/cmake-3.6/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.6/Modules/CMakeCommonLanguageInclude.cmake"
+  "/usr/share/cmake-3.6/Modules/CMakeConfigurableFile.in"
   "/usr/share/cmake-3.6/Modules/CMakeFindDependencyMacro.cmake"
   "/usr/share/cmake-3.6/Modules/CMakeGenericSystem.cmake"
   "/usr/share/cmake-3.6/Modules/CMakeLanguageInformation.cmake"
   "/usr/share/cmake-3.6/Modules/CMakeParseArguments.cmake"
   "/usr/share/cmake-3.6/Modules/CMakeSystemSpecificInformation.cmake"
   "/usr/share/cmake-3.6/Modules/CMakeSystemSpecificInitialize.cmake"
+  "/usr/share/cmake-3.6/Modules/CMakeUnixFindMake.cmake"
+  "/usr/share/cmake-3.6/Modules/CheckFunctionExists.c"
+  "/usr/share/cmake-3.6/Modules/CheckIncludeFile.cxx.in"
   "/usr/share/cmake-3.6/Modules/CheckIncludeFileCXX.cmake"
   "/usr/share/cmake-3.6/Modules/CheckLibraryExists.cmake"
   "/usr/share/cmake-3.6/Modules/CheckSymbolExists.cmake"
@@ -43,6 +48,8 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
+  "CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx"
+  "CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
