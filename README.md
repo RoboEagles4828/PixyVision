@@ -1,6 +1,7 @@
 # PixyVision
 
 ## Info
+* We modified the code that came with the Pixy Camera starter files which is why the folder names and organization is weird, `hello_pixy` was supposed to be the C++ starter project and `libpixyusb_swig` was supposed to be the pyhton starter project.
 * This repository contains two folders, hello_pixy which contains code to interact with the pixycam through the C++ api and libpixyusb_swig which contains code to interact with the pixycam through the python api.
 * Both were necessary when we tried to use the camera since we could not change the camera settings through the python code for some reason. Therefore in `hello_pixy/hello_pixy.cpp` we set the brightness, exposure and white balance of the camera.
 * Next our python code in `libpixyusb_swig/get_blocks.py` sets up a network socket and transmits frame number, signature, width, height, x and y of the targets to the robot through the network socket. Network sockets are used because they are easy to implement in both Python and Java.
