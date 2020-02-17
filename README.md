@@ -6,7 +6,7 @@
 * Next our python code in `libpixyusb_swig/get_blocks.py` sets up a network socket and transmits frame number, signature, width, height, x and y of the targets to the robot through the network socket. Network sockets are used because they are easy to implement in both Python and Java.
 
 ## Usage
-* First follow the PixyCam documentation and set up a rasberry pi with the libraries for both the python and C++ APIs for the pixy
+* First follow the PixyCam documentation and set up a raspberry pi with the libraries for both the python and C++ APIs for the pixy
 * Next run the `hello_pixy/build.sh` script to build the `hello_pixy` binary, the script also moves the binary to the libpixyusb_swig folder
 * Then run the `libpixyusb_swig/start_vision.sh` script which runs the `get_blocks.py` script which in turn runs the `hello_pixy` binary and starts transmitting the detected targets over the network socket.
 
